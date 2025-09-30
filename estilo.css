@@ -18,7 +18,9 @@ header {
 }
 
 section {
-    width: 700px;
+    max-width: 850px;
+    min-width: 300px;
+    margin: auto;
     display: block;
     float: left;
     border-right: 1px solid  #606060;
@@ -27,6 +29,7 @@ section {
 
 h1 {
     text-align: center;
+    text-shadow: 1px 1px 3px #606060;
 }
 h2 {
     margin-top: -10px;
@@ -37,8 +40,13 @@ p {
     text-indent: 30px;
 }
 
+caption {
+    font-weight: bold;
+    font-size: 13pt;
+}
 table {
-    width: 300px;
+    width: 400px;
+    max-width: 300px;
     border: 1px solid #606060;
     border-spacing: 0px;
     margin-left: auto;
@@ -48,15 +56,44 @@ table {
 table td {
     border: 1px solid  #606060;
 }
+table tr.cabecalho {
+    background-color: #606060;
+    color: #ffffff;
+    font-weight: bolder;
+}
+table tr.cor {
+    background-color: #dddddd;
+}
 
 aside {
-    width: 450px;
+    width: 300px;
     display: block;
     float: right;
+    padding: 20px;
+    margin: auto;
+    background-color: #f7f3f3;
+    color: rgba(0,0,0,1);
+    border-top: 1px solid #606060;
+}
+aside header {
+    background-color: #e6e0e0;
     padding: 10px;
-    margin: 10px;
-    background-color: #ddddddab;
-    color: #4e4e4e;
+    margin: -20px -20px 0px -20px;
+}
+aside h1 {
+    margin: 0px;
+    color: #313030;
+    text-shadow: 2px 2px 3px #606060;
+}
+aside h2 {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    color: #313030;
+    font-size: 1,2em;
+}
+aside h3 {
+    color: #313030;
+    margin-bottom: -10px;
 }
 
 footer {
@@ -72,6 +109,6 @@ footer span {
     float: right;
     font-weight: normal;
     font-size: 10pt;
-    margin-top: 15px;
+    margin-top: 10px;
     padding-right: 10px;
 }
