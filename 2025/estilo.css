@@ -17,6 +17,13 @@ header {
     border-bottom: 1px solid  #606060;
 }
 
+nav > a{
+    background-color: lightgray;
+    padding: 10px;
+    margin-top: -10px;
+    font-weight: bolder;
+}
+
 section {
     max-width: 910px;
     min-width: 300px;

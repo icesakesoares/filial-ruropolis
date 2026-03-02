@@ -3,106 +3,373 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Rurópolis</title>
-    <link rel="stylesheet" href="estilo.css">
+    <title>Rede Rurópolis / Miritituba </title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(160, 157, 157);
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: auto;
+            position: relative;
+            width: 950px;
+            border-bottom: 1px solid black;
+            box-shadow: 5px 1px 3px rgba(0, 0, 0, 0.411);
+        }
+        header > img{
+            width: 100px;
+            height: 100px;
+            margin-top: -90px;
+            padding: 0px;
+            
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: auto;
+            width: 950px;
+            box-shadow: 5px 1px 3px rgba(0, 0, 0, 0.411);
+        }
+        h1{
+            font-size: 2.3em;
+            font-weight: bolder;
+            text-align: center;
+            text-shadow: 1px 1px 3px black;
+        }
+        h2{
+            font-size: 1.3em;
+            padding: 3px 40px;
+        }
+        p{
+            text-align: justify;
+            padding: 3px 40px;
+        }
+        div{
+            margin: 10px;
+            padding-bottom: 20px;
+        }
+        table{
+            border-collapse: collapse;
+            margin: auto;
+            width: 600px;
+        }
+        caption{
+            font-size: 1em;
+            font-weight: bolder;
+        }
+        thead{
+            background-color: rgb(44, 43, 43);
+            color: white;
+        }
+        th, td{
+            border: 1px solid black;
+            text-align: center;
+            font-size: .85em;
+            font-weight: bold;
+        }
+        tr:nth-child(even){
+            background-color: rgb(228, 228, 228);
+        }
+        footer{
+            width: 950px;
+            background-color: white;
+            margin: auto;
+            padding: 5px 10px;
+            border-top: 1px solid black;
+            font-weight: bold;
+            box-shadow: 5px 1px 3px rgba(0, 0, 0, 0.411);
+        }
+        footer > p > span{
+            display: block;
+            float: right;
+            font-weight: normal;
+        }
+    </style>
 </head>
 <body>
-    <div>
-        <header>
-                <h1>Rede WSP BR-230</h1>
-                <h2>Documentação atualizada das fibras no trecho Rurópolis / Miritituba</h2>
-            </header>
+    <header>
+        <h1>Rede WSP BR-230</h1>
+        <img src="imagens/logo1.jpg" alt="WSP">
+    </header>
+    <main>
         <section>
             <article>
-                <p>Temos um cabo de fibra <em>ASU120 12FO</em> no qual <span style="text-decoration: underline;">6 fibra</span> são exclusivas <span style="font-weight: bold;">WSP</span> e <span style="text-decoration: underline;">6</span> são disponibilizadas para <span style="font-weight: bold;">SEA</span>. Segue abaixo uma tabela com as descrições de como está sendo ultilizado.</p>
-                <table>
-                    <caption><em>Rurópolis x Divinópolis</em></caption>
-                    <tr class="cabecalho"><td>FIBRA</td><td>COR</td><td>TIPO</td><td>EMPRESA</td></tr>
-                    <tr><td>1</td><td>verde</td><td>standby</td><td>wsp</td></tr>
-                    <tr class="cor"><td>2</td><td>amarelo</td><td>tx</td><td>wsp</td></tr>
-                    <tr><td>3</td><td>branco</td><td>tx</td><td>wsp</td></tr>
-                    <tr class="cor"><td>4</td><td>azul</td><td>standby</td><td>wsp</td></tr>
-                    <tr><td>5</td><td>vermelho</td><td>in-use</td><td>sea</td></tr>
-                    <tr class="cor"><td>6</td><td>violeta</td><td>rx</td><td>wsp</td></tr>
-                    <tr><td>7</td><td>marrom</td><td>rx</td><td>wsp</td></tr>
-                    <tr class="cor"><td>8</td><td>rosa</td><td>in-use</td><td>sea</td></tr>
-                    <tr><td>9</td><td>preto</td><td>in-use</td><td>sea/vivo</td></tr>
-                    <tr class="cor"><td>10</td><td>cinza</td><td>in-use</td><td>sea/vivo</td></tr>
-                    <tr><td>11</td><td>laranja</td><td>standby</td><td>sea</td></tr>
-                    <tr class="cor"><td>12</td><td>áqua</td><td>standby</td><td>sea</td></tr>
-                </table>
-                <p>O <span style="font-weight: 600;">primeiro POP</span> está localizado na rodovia <span style="text-decoration: underline;">transamazônica km70</span> na vila Divinópolis. Neste local temos um rack dentro de uma das salas do posto de combustível auto posto divinópolis.</p>
-                <table>
-                    <caption><em>Divinópolis x Campo Verde</em></caption>
-                    <tr class="cabecalho"><td>FIBRA</td><td>COR</td><td>TIPO</td><td>EMPRESA</td></tr>
-                    <tr><td>1</td><td>verde</td><td>standby</td><td>wsp</td></tr>
-                    <tr class="cor"><td>2</td><td>amarelo</td><td>standby</td><td>wsp</td></tr>
-                    <tr><td>3</td><td>branco</td><td>standby</td><td>wsp</td></tr>
-                    <tr class="cor"><td>4</td><td>azul</td><td>standby</td><td>wsp</td></tr>
-                    <tr><td>5</td><td>vermelho</td><td>standby</td><td>wsp</td></tr>
-                    <tr class="cor"><td>6</td><td>violeta</td><td>mux</td><td>wsp</td></tr>
-                    <tr><td>7</td><td>marrom</td><td>in-use</td><td>sea</td></tr>
-                    <tr class="cor"><td>8</td><td>rosa</td><td>in-use</td><td>sea</td></tr>
-                    <tr><td>9</td><td>preto</td><td>in-use</td><td>sea/vivo</td></tr>
-                    <tr class="cor"><td>10</td><td>cinza</td><td>in-use</td><td>sea/vivo</td></tr>
-                    <tr><td>11</td><td>laranja</td><td>standby</td><td>sea</td></tr>
-                    <tr class="cor"><td>12</td><td>áqua</td><td>standby</td><td>sea</td></tr>
-                </table>
-                <p>O <span style="font-weight: 600;">segundo POP</span> está localizado na Rodovia <span style="text-decoration: underline;">Transamazônica km30</span> na Vila Campo Verde. Onde temos um Rack dentro de uma das salas da conviniência do posto Miriam.</p>
-                <table>
-                    <caption><em>Campo Verde x Miritituba</em></caption>
-                    <tr class="cabecalho"><td>FIBRA</td><td>COR</td><td>TIPO</td><td>EMPRESA</td></tr>
-                    <tr><td>1</td><td>verde</td><td>mux</td><td>wsp</td></tr>
-                    <tr class="cor"><td>2</td><td>amarelo</td><td>standby</td><td>wsp</td></tr>
-                    <tr><td>3</td><td>branco</td><td>standby</td><td>wsp</td></tr>
-                    <tr class="cor"><td>4</td><td>azul</td><td>standby</td><td>wsp</td></tr>
-                    <tr><td>5</td><td>vermelho</td><td>standby</td><td>wsp</td></tr>
-                    <tr class="cor"><td>6</td><td>violeta</td><td>mux</td><td>wsp</td></tr>
-                    <tr><td>7</td><td>marrom</td><td>in-use</td><td>sea</td></tr>
-                    <tr class="cor"><td>8</td><td>rosa</td><td>in-use</td><td>sea</td></tr>
-                    <tr><td>9</td><td>preto</td><td>in-use</td><td>sea</td></tr>
-                    <tr class="cor"><td>10</td><td>cinza</td><td>in-use</td><td>sea</td></tr>
-                    <tr><td>11</td><td>laranja</td><td>standby</td><td>sea/vivo</td></tr>
-                    <tr class="cor"><td>12</td><td>áqua</td><td>standby</td><td>sea/vivo</td></tr>
-                </table>
-                <p style="font-weight: 600; font-size: 11pt;"> Obs: As informações da tabela Campo Verde x Miritituba podem variar sem o meu conhecimento pois geralmente é a equipe de Itaituba que dá manutenção nesse trecho. </p>
+                <h2>Descrição das fibras no trecho Rurópolis x Miritituba</h2>
+                <p>Existe um cabo de fibra ASU120 12FO próprio WSP na filial Rurópolis com destino à Miritituba, onde 6FO são exclusivas da WSP e 6FO disponibilizadas pra SEA. Nesse projeto existem POPs(ponto operacional padrão) e CEO(Caixa de Emenda Optica) de acesso em locais estratégicos devido a distância entre as filiais.
+                </p>
+                <p>Saindo do POP de Rurópolis à 82 kilometros de fibra temos um segundo POP, localizado na Rodovia Transamazônica Auto Posto Divinópolis km70 Distrito Divinópolis. À 41 kilometros de fibra após Divinópolis temos um terceiro POP, localizado na Rodovia Tranzamazônica Auto Posto Miriam no distrito Campo Verde km 30. O quarto e ultimo POP está à 33 kilometros de fibra após Campo Verde, localizado já em Miritituba.</p>
+                <p>Segue abaixo tabelas de informações das fibras ultilizadas e disponíveis com as empresas.</p>
+                <div>
+                    <table>
+                        <caption>Rurópolis x Divinópolis</caption>
+                        <thead>
+                            <tr>
+                                <th>Fibra</th>
+                                <th>Cor</th>
+                                <th>Tipo</th>
+                                <th>Empresa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Verde</td>
+                                <td>Standby</td>
+                                <td>WSP</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Amarelo</td>
+                                <td>P19/TX</td>
+                                <td>WSP</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Branco</td>
+                                <td>P20/TX</td>
+                                <td>WSP</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Azul</td>
+                                <td>Standby</td>
+                                <td>WSP</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Vermelho</td>
+                                <td>Standby</td>
+                                <td>SEA</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Violeta</td>
+                                <td>P20/RX</td>
+                                <td>WSP</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Marrom</td>
+                                <td>P19/RX</td>
+                                <td>WSP</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Rosa</td>
+                                <td>In-use</td>
+                                <td>SEA</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>Preto</td>
+                                <td>In-use</td>
+                                <td>VIVO</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>Cinza</td>
+                                <td>In-use</td>
+                                <td>VIVO</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>Laranja</td>
+                                <td>Standby</td>
+                                <td>SEA</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>Aqua</td>
+                                <td>Standby</td>
+                                <td>SEA</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                 <div>
+                    <table>
+                        <caption>Divinópolis x Campo Verde</caption>
+                        <thead>
+                            <tr>
+                                <th>Fibra</th>
+                                <th>Cor</th>
+                                <th>Tipo</th>
+                                <th>Empresa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Verde</td>
+                                <td>Standby</td>
+                                <td>WSP</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Amarelo</td>
+                                <td>Standby</td>
+                                <td>WSP</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Branco</td>
+                                <td>Standby</td>
+                                <td>WSP</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Azul</td>
+                                <td>Standby</td>
+                                <td>WSP</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Vermelho</td>
+                                <td>Standby</td>
+                                <td>WSP</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Violeta</td>
+                                <td>Link-MUX</td>
+                                <td>WSP</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Marrom</td>
+                                <td>Standby</td>
+                                <td>SEA</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Rosa</td>
+                                <td>In-use</td>
+                                <td>SEA</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>Preto</td>
+                                <td>In-use</td>
+                                <td>VIVO</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>Cinza</td>
+                                <td>In-use</td>
+                                <td>VIVO</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>Laranja</td>
+                                <td>Standby</td>
+                                <td>SEA</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>Aqua</td>
+                                <td>Standby</td>
+                                <td>SEA</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                 <div>
+                    <table>
+                        <caption>Campo Verde x Miritituba</caption>
+                        <thead>
+                            <tr>
+                                <th>Fibra</th>
+                                <th>Cor</th>
+                                <th>Tipo</th>
+                                <th>Empresa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Verde</td>
+                                <td>Link-MUX</td>
+                                <td>WSP</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Amarelo</td>
+                                <td>R-km11</td>
+                                <td>WSP</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Branco</td>
+                                <td>Standby</td>
+                                <td>WSP</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Azul</td>
+                                <td>Standby</td>
+                                <td>WSP</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Vermelho</td>
+                                <td>APM-APT</td>
+                                <td>SEA</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Violeta</td>
+                                <td>*12</td>
+                                <td>VIVO</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Marrom</td>
+                                <td>Standby</td>
+                                <td>SEA</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Rosa</td>
+                                <td>In-use</td>
+                                <td>SEA</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>Preto</td>
+                                <td>*11</td>
+                                <td>VIVO</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>Cinza</td>
+                                <td>*12</td>
+                                <td>VIVO</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>Laranja</td>
+                                <td>*9</td>
+                                <td>VIVO</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>Aqua</td>
+                                <td>*10</td>
+                                <td>VIVO</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>Originalmente as fibras da vivo são FO09(preto) e FO10(cinza), porém no decorrer de algumas manutenções ouve algumas mudanças que irei detalhar aqui.</p>
+                <p>Fibra 09(preto) está emendada com a fibra 11(laranja) à 45km após Divinópolis sentido Miritituba, que volta a ser emendada com a fibra 09(preto) novamente à 1km antes da CEO de acesso em MIritituba. </p>
+                <p>Fibra 10(cinza) está emendada com a fibra 12(aqua) à 45km após Divinópolis sentido Miritituba, que volta a ser emendada com a fibra 10(cinza) novamente na primeira CEO do posto Trevão 8km antes de Miritituba, e emenda na fibra 06(violeta) à 1km da CEO de acesso em Miritituba.</p>
             </article>
         </section>
-        <aside>
-            <header>
-                <h1>Caixas de acesso</h1>
-                <h2>Descição dos cabos</h2>
-            </header>
-            <h3>CEO Rurópolis</h3>
-            <ul>
-                <li>Cabo 1 - wsp &rarr; pop</li>
-                <li>Cabo 2 - wsp &rarr; br</li>
-                <li>Cabo 1 - sea &rarr; pop</li>
-                <li>Cabo 2 - sea &rarr; intelig</li>
-            </ul>
-            <br>
-
-            <h3>CEO Divinópolis</h3>
-            <ul>
-                <li>Cabo 1 - wsp &rarr; rurópolis</li>
-                <li>Cabo 2 - wsp &rarr; campo verde</li>
-                <li>Cabo 3 - wsp &rarr; pop</li>
-                <li>Cabo 4 - wsp &rarr; pop</li>
-                <li>Cabo 1 - sea &rarr; interlig</li>
-                <li>Cabo 2 - sea &rarr; slimnet</li>
-            </ul>
-            <br>
-            
-            <h3>CEO Campo Verde</h3>
-            <ul>
-                <li>Cabo 1 - wsp &rarr; Divinópolis</li>
-                <li>Cabo 2 - wsp &rarr; posto Miriam</li>
-                <li>Cabo 1 - sea &rarr; interlig</li>
-            </ul>
-        </aside>
-        <footer>
-            <p>Copyright &copy; - by Icesake Soares Sousa. <span>30/set/2025</span></p>
-        </footer>
-    </div>
+    </main>
+    <footer>
+        <p>Copryght &copy; - Icesake Soares Sousa. <span>02/mar/2026</span></p>
+    </footer>
 </body>
 </html>
