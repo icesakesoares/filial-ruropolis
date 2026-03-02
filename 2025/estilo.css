@@ -22,7 +22,13 @@ nav > a{
     padding: 10px;
     margin-top: -10px;
     font-weight: bolder;
+    border-radius: 5px;
+    text-decoration: none;
 }
+ a:hover{
+    color: red;
+    text-decoration: underline;
+ }
 
 section {
     max-width: 910px;
@@ -40,6 +46,7 @@ h1 {
 }
 h2 {
     margin-top: -10px;
+    margin-bottom: 10px;
 }
 
 p {
