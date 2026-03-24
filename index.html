@@ -11,7 +11,7 @@
             background-color: rgb(160, 157, 157);
         }
         header{
-            background-color: white;
+            background-color: rgb(245, 127, 17);
             padding: 10px;
             margin: auto;
             position: relative;
@@ -47,7 +47,8 @@
             width: 950px;
             box-shadow: 5px 1px 3px rgba(0, 0, 0, 0.411);
         }
-        h1{
+        header > h1{
+            color: white;
             font-size: 2.3em;
             font-weight: bolder;
             text-align: center;
@@ -55,27 +56,40 @@
         }
         h2{
             font-size: 1.3em;
+            text-shadow: 1px 1px 1px rgb(48, 47, 47);
             padding: 3px 40px;
         }
         p{
             text-align: justify;
-            padding: 3px 40px;
+            margin-left: 5px;
+            padding: 5px;
+            text-indent: 30px;
         }
-        div{
+        div#rrpxdnp{
+            margin: 10px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid black;
+        }
+        div#dnpxcpv{
+            margin: 10px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid black;
+        }
+        div#cpvxmtt{
             margin: 10px;
             padding-bottom: 20px;
         }
         table{
             border-collapse: collapse;
-            margin: auto;
             width: 600px;
+            margin: auto;
         }
         caption{
             font-size: 1em;
             font-weight: bolder;
         }
         thead{
-            background-color: rgb(44, 43, 43);
+            background-color: blue;
             color: white;
         }
         th, td{
@@ -85,7 +99,15 @@
             font-weight: bold;
         }
         tr:nth-child(even){
-            background-color: rgb(228, 228, 228);
+            background-color: rgb(130, 162, 230);
+        }
+        ul {
+            margin-left: 100px;
+            padding: 10px;
+            width: 600px;
+        }
+        ul > li {
+            padding: 5px;
         }
         footer{
             width: 950px;
@@ -120,7 +142,22 @@
                 </p>
                 <p>Saindo do POP de Rurópolis à 82 kilometros de fibra temos um segundo POP, localizado na Rodovia Transamazônica Auto Posto Divinópolis km70 Distrito Divinópolis. À 41 kilometros de fibra após Divinópolis temos um terceiro POP, localizado na Rodovia Tranzamazônica Auto Posto Miriam no distrito Campo Verde km 30. O quarto e ultimo POP está à 33 kilometros de fibra após Campo Verde, localizado já em Miritituba.</p>
                 <p>Segue abaixo tabelas de informações das fibras ultilizadas e disponíveis com as empresas.</p>
-                <div>
+                <div id="rrpxdnp">
+                    <h2>Rurópolis x Divinópolis</h2>
+                        <ul>
+                            <li>Fibra 1  - Disponível</li>
+                            <li>Fibra 2  - TX HUAWEI PORTA 19</li>
+                            <li>Fibra 3  - TX HUAWEI PORTA 20</li>
+                            <li>Fibra 4  - Sem uso. * Obs: (defeito no cabo novo no km112)</li>
+                            <li>Fibra 5  - SEA</li>
+                            <li>Fibra 6  - RX HUAWEI PORTA 19</li>
+                            <li>Fibra 7  - RX HUAWEI PORTA 20</li>
+                            <li>Fibra 8  - SEA</li>
+                            <li>Fibra 9  - VIVO</li>
+                            <li>Fibra 10 - VIVO</li>
+                            <li>Fibra 11 - Disponível</li>
+                            <li>Fibra 12 - Disponível</li>
+                        </ul>
                     <table>
                         <caption>Rurópolis x Divinópolis</caption>
                         <thead>
@@ -207,7 +244,22 @@
                         </tbody>
                     </table>
                 </div>
-                 <div>
+                 <div id="dnpxcpv">
+                    <h2>Divinópoli x Campo Verde</h2>
+                    <ul>
+                        <li>Fibra 1 - Disponível</li>
+                        <li>Fibra 2 - Disponível</li>
+                        <li>Fibra 3 - Disponível</li>
+                        <li>Fibra 4 - Disponível</li>
+                        <li>Fibra 5 - Disponível</li>
+                        <li>Fibra 6 - LINK via MUX</li>
+                        <li>Fibra 7 - SEA</li>
+                        <li>Fibra 8 - SEA</li>
+                        <li>Fibra 9 - VIVO</li>
+                        <li>Fibra 10 - VIVO</li>
+                        <li>Fibra 11 - Disponível</li>
+                        <li>Fibra 12 - Disponível</li>
+                    </ul>
                     <table>
                         <caption>Divinópolis x Campo Verde</caption>
                         <thead>
@@ -294,7 +346,22 @@
                         </tbody>
                     </table>
                 </div>
-                 <div>
+                 <div id="cpvxmtt">
+                    <h2>Campo Verde x Miritituba</h2>
+                    <ul>
+                        <li>Fibra 1 - LINK via MUX.</li>
+                        <li>Fibra 2 - Ramal do km11.</li>
+                        <li>Fibra 3 - Sem uso. *Obs:(defeito no cabo novo no km28.509).</li>
+                        <li>Fibra 4 - Sem uso. *Obs:(defeito no cabo novo no km25.160).</li>
+                        <li>Fibra 5 - Ramal do Posto Miriam e do Posto Trevão.</li>
+                        <li>Fibra 6 - Está sendo ultilizada com a fibra 10 da CEO em frente o PROTOK até a CEO de acesso de Miritituba.</li>
+                        <li>Emendado com a fibra 4 na CEO em frente o PROTOK, sem informações</li>
+                        <li>Fibra 8 - SEA.</li>
+                        <li>Fibra 9 - VIVO. *Obs:(feito bypasse de cordão no DIO de Campo Verde4km após Campo Verde está emendado na fibra 11 até a CEO em frente o PROTOK, onde volta para fibra 9 até a CEO de acesso em Miritituba).</li>
+                        <li>Fibra 10 - VIVO. *Obs:(Emendado por fusão na bandeija do DIO de Campo Verde. 4km após Campo Verde está emendado na fibra 12 até a primeira CEO do Posto Trevão onde segue na fibra 10 até a CEO em frente o PROTOK, onde está emendado na fibra 6 até a CEO de acesso em MIritituba).</li>
+                        <li>Fibra 11 - Sendo usada com a fibra 9.</li>
+                        <li>Fibra 12 - Sendo usada com a fibra 10.</li>
+                    </ul>
                     <table>
                         <caption>Campo Verde x Miritituba</caption>
                         <thead>
@@ -381,14 +448,16 @@
                         </tbody>
                     </table>
                 </div>
-                <p>Originalmente as fibras da vivo são FO09(preto) e FO10(cinza), porém no decorrer de algumas manutenções ouve algumas mudanças que irei detalhar aqui.</p>
-                <p>Fibra 09(preto) está emendada com a fibra 11(laranja) à 45km após Divinópolis sentido Miritituba, que volta a ser emendada com a fibra 09(preto) novamente à 1km antes da CEO de acesso em MIritituba. </p>
-                <p>Fibra 10(cinza) está emendada com a fibra 12(aqua) à 45km após Divinópolis sentido Miritituba, que volta a ser emendada com a fibra 10(cinza) novamente na primeira CEO do posto Trevão 8km antes de Miritituba, e emenda na fibra 06(violeta) à 1km da CEO de acesso em Miritituba.</p>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h1></h1>
             </article>
         </section>
     </main>
     <footer>
-        <p>Copyright &copy; - Icesake Soares Sousa. <span>02/mar/2026</span></p>
+        <p>&copy;Copyright - Icesake Soares Sousa. <span>24/mar/2026</span></p>
     </footer>
 </body>
 </html>
